@@ -37,11 +37,11 @@ const result = flatpickr(refs.dataPicker, options);
 refs.dataStart.addEventListener('click', onStartBtnClick);
 
 function onStartBtnClick() {
-   refs.intervalId = setInterval(() => {
+    refs.intervalId = setInterval(() => {
     const newDate = new Date();
     const selectedDate = result.selectedDates[0];
-     const timerData = selectedDate - newDate;
-     
+    const timerData = selectedDate - newDate;
+    
     if (timerData <= 0) {
       clearInterval(refs.intervalId);
       isActive = false;

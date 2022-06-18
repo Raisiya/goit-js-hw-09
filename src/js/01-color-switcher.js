@@ -7,6 +7,7 @@ const refs = {
 const PROMPT_DELAY = 1000;
 let intervalId = null;
 
+
 refs.startBtn.addEventListener('click', srartChangeColor);
 refs.stopBtn.addEventListener('click', stopChangeColor);
 
